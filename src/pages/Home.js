@@ -30,7 +30,7 @@ function Home({ user, details }) {
 
   return (
     <>
-      <div>Home</div>
+      <div >Home</div>
       {user?
       <>
       <Button action={()=>{navigate(link)}} buttonText={buttonText} />

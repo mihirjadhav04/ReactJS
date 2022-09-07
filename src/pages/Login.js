@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "../components/Button";
 import {useNavigate} from 'react-router-dom'
+import "../App.css";
 
 function Login({setUser}) {
 
@@ -12,8 +13,8 @@ function Login({setUser}) {
   for(let key in user){
     inputs.push(
       <>
-        <label>{key}: </label>
-        <input type="text" value={user[key]} 
+        {/* <label>{key}: </label> */}
+        <input type="text" className="inputField" value={user[key]} 
         name={key} placeholder={key} 
         onChange={(e)=>saveUser({...user, [key]: e.target.value})} 
         required = "true"
@@ -37,8 +38,8 @@ function Login({setUser}) {
 
   return (
     <div>
-      Login Form
-      <form>
+      <form className="msform">
+        <h3 className="fs-title">Login Form</h3>
         {inputs}
         <Button action={loginForm} buttonText={"Login"} />
       </form>
