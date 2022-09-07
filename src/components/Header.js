@@ -6,12 +6,17 @@ function Header(props) {
 
   const navigate = useNavigate();
 
+  const logout = () => {
+    props.setUser();
+    navigate('/')
+  }
+
   return (
     <div>
         Think360 React JS Assignment
-        {props.token?
+        {props.user?
         <>
-          <Button action={()=>props.setToken()} buttonText={"Logout"} />
+          <Button action={logout} buttonText={"Logout"} />
         </>:
         <>
           <Button action={()=>navigate('/login')} buttonText={"Login"} />
