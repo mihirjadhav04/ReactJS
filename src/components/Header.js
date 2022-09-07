@@ -1,8 +1,13 @@
 import React from 'react'
+import Button from './Button'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div>
+      Header
+      <Button buttonText="Login"/>
+    </div>
+    
   )
 }
 
