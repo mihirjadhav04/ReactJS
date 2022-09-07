@@ -17,8 +17,9 @@ function Summary({details}) {
 
   return (
     <div>
-      <h3>Summary</h3>
-      <table>
+      <table className="msform">
+      <h3 className="fs-title">Summary</h3>
+
         <tr>
           <th>Details</th>
           <th>Information</th>

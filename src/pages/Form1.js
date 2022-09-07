@@ -12,8 +12,8 @@ function Form1({details, setDetails}) {
   for(let key in temporaryDetails){
     inputs.push(
       <>
-        <label>{temporaryDetails[key]['name']}: </label>
-        <input type={temporaryDetails[key]['type']} value={temporaryDetails[key]['value']} 
+        {/* <label>{temporaryDetails[key]['name']}: </label> */}
+        <input className="inputField" type={temporaryDetails[key]['type']} value={temporaryDetails[key]['value']} 
         name={key['name']} placeholder={temporaryDetails[key]['name']} 
         onChange={(e)=>setTemp({...temporaryDetails, 
             [key]: 
@@ -36,8 +36,9 @@ function Form1({details, setDetails}) {
 
   return (
     <div>
-      <h3>Step 1 out of 3</h3>
-      <form onSubmit={next}>
+      <form className="msform" onSubmit={next}>
+      <h3 className="fs-title">Step 1 out of 3</h3>
+
         {inputs}
         <Button type={"submit"} buttonText={"Next"} />
       </form>
