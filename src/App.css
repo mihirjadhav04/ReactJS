@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* buttons css */
+.msform, .form-button {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+.msform .form-button:hover, .msform .form-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
