@@ -10,7 +10,7 @@ import Form3 from "./pages/Form3";
 
 function App() {
 
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState();
   const [details, setDetails] = useState({
     personalDetails:{
       firstname: {name: 'First Name', type: 'text', value: ''},
